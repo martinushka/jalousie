@@ -1,0 +1,673 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Изготовление мебели</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet/less" href="style.less">
+    <script src="less.min.js"></script>
+
+  </head>
+  <body>
+    <header>
+      <div class="container">
+
+        <div class="row">
+
+          <div class="col-col-sm-3 logotype">
+          <img src="img/logo.png" alt="Логотип Жалюзи" class="img-responsive">
+          </div>
+
+          <div class="col-col-sm-6 text-center descript">
+            <h4>Производство, продажа и установка жалюзи</h4>
+            <h5>В Казани и Республике Татарстан</h5>
+          </div>
+
+          <div class="col-col-sm-3 phone_number">
+            <h3><a href="tel:+799999999">8 (999) 999-99-99</a></h3>
+            <p>Режим работы с 9 <sup>00</sup> до 18 <sup>00</sup></p>
+          </div>
+
+        </div>
+      </div>
+    </header>
+    
+    <nav>
+      <div class="container">
+        <div class="row">
+          <ul class="list-inline">
+            <a href="#">
+              <li>Главная</li>
+            </a>
+            <a href="#">
+              <li>Виды жалюзи</li>
+            </a>
+            <a href="#">
+              <li>Наши работы</li>
+            </a>
+            <a href="#">
+              <li>Акция</li>
+            </a>
+            <a href="#">
+              <li>Отзывы</li>
+            </a>
+            <a href="#">
+              <li>Контакты</li>
+            </a>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <section id="main">
+      <div class="container">
+        <div class="row main_header">
+          <h1><span>Установим жалюзи в вашей квартире </span> <br> <span> за 2 часа с полной гарантией</span> <br> <span> и бесплатной доставкой</span> </h1>
+        </div>
+        <div class="row">
+          <h3>Закажите выезд замерщика на дом. <span>Это бесплатно!</span></h3>
+        </div>
+        <div class="row main_buttons">
+          <button data-toggle="modal" href="#get_measurer_modal" id="get_measurer">Вызвать замерщика</button>
+          <a href="#types"><button id="get_types">Выбрать жалюзи</button></a>
+        </div>
+      </div>
+    </section>
+
+    <section id="types">
+      <div class="container">
+        <div class="row">
+          <div class="section_header text-center">
+            <h2>Виды жалюзи</h2>
+          </div>
+            <div class="row text-center">
+              <div class="col-md-3">
+                <div class="card">
+                  <img src="img/types-1.jpg" alt="Горизонтальные жалюзи" class="img-resposive center-block">
+                  <h4>Горизонтальные жалюзи</h4>
+                  <br>.
+                  <button class="more_btn" data-toggle="modal" href="#more_horizontal">Подробнее</button>
+                  <button class="offer_btn" data-toggle="modal" href="#">Заказать</button>
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div class="card">
+                  <img src="img/types-2.jpg" alt="Вертикальные жалюзи" class="img-resposive center-block">
+                  <h4>Вертикальные жалюзи</h4>
+                  <br>
+                  <button class="more_btn" data-toggle="modal" href="#more_vertical">Подробнее</button>
+                  <button class="offer_btn" data-toggle="modal" href="#get_horizontal">Заказать</button>
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div class="card">
+                  <img src="img/types-3.jpg" alt="рулонные жалюзи" class="img-resposive center-block">
+                  <h4>рулонные жалюзи</h4>
+                  <br>
+                  <button class="more_btn" data-toggle="modal" href="#more_roll">Подробнее</button>
+                  <button class="offer_btn" data-toggle="modal" href="#">Заказать</button>
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div class="card">
+                  <img src="img/types-4.jpg" alt="жалюзи плиссе" class="img-resposive center-block">
+                  <h4>жалюзи плиссе</h4>
+                  <br>
+                  <button class="more_btn" data-toggle="modal" href="#more_pleated">Подробнее</button>
+                  <button class="offer_btn" data-toggle="modal" href="#">Заказать</button>
+                </div>
+              </div> <!-- col-md-3-->
+          </div> <!-- row text-center-->
+        </div> <!-- row-->
+      </div> <!-- container-->
+    </section>
+    
+    <section id="help">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 col-md-offset-2">
+            <h3>Не знаете какие жалюзи выбрать?</h3>
+            <br>
+            <p>Оставьте заявку на консультацию и наш специалист подробно ответит <br> на все вопросы. Это бесплатно.</p>
+            <br>
+            <button id="free_consult" data-toggle="modal" href="#">Бесплатная консультация
+            </button>
+          </div>
+          <div class="col-md-2">
+            <img src="img/help_img.jpg" alt="Бесплатная консультация" class="img-responsive help_img center-block">
+          </div>
+        </div> <!--row-->
+      </div>
+    </section>
+
+    <section id="portfolio">
+      <div class="container">
+        <div class="row">
+          <div class="section_header text-center">
+            <h2>Наши работы</h2>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-8 col-md-offset-2">
+            <div class="slider">
+              <div class="fotorama" data-nav="thumbs" data-fit="cover">
+                <img src="img/portfolio/1.jpg" alt="">
+                <img src="img/portfolio/2.jpg" alt="">
+                <img src="img/portfolio/3.jpg" alt="">
+                <img src="img/portfolio/4.jpg" alt="">
+                <img src="img/portfolio/5.jpg" alt="">
+                <img src="img/portfolio/6.jpg" alt="">
+                <img src="img/portfolio/7.jpg" alt="">
+                <img src="img/portfolio/8.jpg" alt="">
+                <img src="img/portfolio/9.jpg" alt="">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <section id="offer">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-3">
+          <img src="img/gift.jpg" alt="Подарок" class="img-repsonsive center-block gift">
+          </div>
+          <div class="col-md-9">
+            <h4>Акция</h4>
+            <br>
+            <h3>Закажите установку жалюзи до 29.06.2016</h3>
+            <p>И получите в подарок москитную сетку для окна</p>
+            <div class="row">
+              <div class="col-md-4">
+                <form action="#">
+                <input name="name" type="text" required placeholder="Имя..." class="form-control form_input">
+              </div>
+              <div class="col-md-4">
+                <input name="phone" type="text" required placeholder="Телефон..." class="form-control form_input">
+              </div>
+              <div class="col-md-4">
+                <button type="submit">Заказать жалюзи</button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div> <!-- row-->
+      </div>
+    </section>
+
+    <section id="feedback">
+      <div class="container">
+        <div class="row">
+          <div class="section_header text-center">
+            <h2>Отзывы о нашей работе</h2>
+          </div>
+        </div>
+        <div class="row">
+          <div class="feedback_slider">
+                        <!-- Карусель -->
+            <div id="myCarousel" class="carousel slide" data-interval="3000" data-ride="carousel">
+              <!-- Индикаторы для карусели -->
+              <ol class="carousel-indicators">
+                <!-- Перейти к 0 слайду карусели с помощью соответствующего индекса data-slide-to="0" -->
+                <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                <!-- Перейти к 1 слайду карусели с помощью соответствующего индекса data-slide-to="1" -->
+                <li data-target="#myCarousel" data-slide-to="1"></li>
+                <!-- Перейти к 2 слайду карусели с помощью соответствующего индекса data-slide-to="2" -->
+                <li data-target="#myCarousel" data-slide-to="2"></li>
+              </ol>   
+              <!-- Слайды карусели -->
+              <div class="carousel-inner">
+                <!-- Слайды создаются с помощью контейнера с классом item, внутри которого помещается содержимое слайда -->
+                <div class="active item">
+                  <div class="row">
+                    <div class="col-md-4">
+                      <div class="fotorama">
+                        <img src="img/feedback/1/1.jpg" alt="">
+                        <img src="img/feedback/1/2.jpg" alt="">
+                        <img src="img/feedback/1/3.jpg" alt="">
+                      </div>
+                    </div>
+                    <div class="col-md-8">
+                      <div class="row">
+                        <div class="col-md-2">
+                          <img src="img/avatar-1.jpg" alt="" class="img-circle center-block">
+                        </div>
+                        <div class="col-md-10">
+                          <h5>Рифат</h5>
+                          <a href="#">vk.com/id25435634</a>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="audio">
+                          <audio controls>
+                            <source src="" type="audio/mpeg">
+                          </audio>
+                        </div>
+                      </div>
+                      <div class="row">Искали долго подрядчика дял установки жалюзей в торговом центре на Амирахана. Нужно было в короткий срок изготовить и повесить жалюзи в 12 офисах. Работали через юр.лицо, поэтому нужны были все закрывающие документы для бухглатерии. Нашли в Яндексе компанию "Ореол", сработали на отлично. Сроки не сорвали, работу выполнили качественно. Ешё и осблуживание предложили выгодное. В общем, мы остались довольны.
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- Слайд №2 -->
+                <div class="item">
+                  <div class="row">
+                    <div class="col-md-4">
+                      <div class="fotorama">
+                        <img src="img/feedback/1/1.jpg" alt="">
+                        <img src="img/feedback/1/2.jpg" alt="">
+                        <img src="img/feedback/1/3.jpg" alt="">
+                      </div>
+                    </div>
+                    <div class="col-md-8">
+                      <div class="row">
+                        <div class="col-md-2">
+                          <img src="img/avatar-1.jpg" alt="" class="img-circle center-block">
+                        </div>
+                        <div class="col-md-10">
+                          <h5>Гульназ</h5>
+                          <a href="#">vk.com/id25435634</a>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="audio">
+                          <audio controls>
+                          <source src="audio/feedback_1.mp3" type="audio/mpeg">
+                          </audio>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <p>Ну вы знаете, искали долго подрядчика дял установки жалюзей в торговом центре на Амирахана. Нужно было в короткий срок изготовить и повесить жалюзи в 12 офисах. Работали через юр.лицо, поэтому нужны были все закрывающие документы для бухглатерии. Нашли в Яндексе компанию "Ореол", сработали на отлично. Сроки не сорвали, работу выполнили качественно. Ешё и осблуживание предложили выгодное. В общем, мы остались довольны.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- Слайд №3 -->
+                <div class="item">
+                  <div class="row">
+                    <div class="col-md-4">
+                      <div class="fotorama">
+                        <img src="img/feedback/1/1.jpg" alt="">
+                        <img src="img/feedback/1/2.jpg" alt="">
+                        <img src="img/feedback/1/3.jpg" alt="">
+                      </div>
+                    </div>
+                    <div class="col-md-8">
+                      <div class="row">
+                        <div class="col-md-2">
+                          <img src="img/avatar-1.jpg" alt="" class="img-circle center-block">
+                        </div>
+                        <div class="col-md-10">
+                          <h5>Вита</h5>
+                          <a href="#">vk.com/id25435634</a>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="audio">
+                          <div class="audio">
+                          <audio controls>
+                          <source src="audio/feedback_1.mp3" type="audio/mpeg">
+                          </audio>
+                        </div>
+                        </div>
+                      </div>
+                      <div class="row">Мы с мужем искали долго подрядчика дял установки жалюзей в торговом центре на Амирахана. Нужно было в короткий срок изготовить и повесить жалюзи в 12 офисах. Работали через юр.лицо, поэтому нужны были все закрывающие документы для бухглатерии. Нашли в Яндексе компанию "Ореол", сработали на отлично. Сроки не сорвали, работу выполнили качественно. Ешё и осблуживание предложили выгодное. В общем, мы остались довольны.
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer id="contacts">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-5 col-md-offset-1">
+            <div class="map">
+              <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A3d29056e98c0b7d911966e1683c4eaaea07bbaefedd17710cb544f80a3fc7756&amp;width=100%25&amp;height=330&amp;lang=ru_RU&amp;scroll=true"></script>
+            </div>
+          </div> <!--col-md-6-->
+          <div class="col-md-6">
+            <h2>Контакты</h2>
+            <div class="row">
+              <address>
+              <p id="address">
+                Адрес:
+              </p>
+              <p id="Kazan">
+                Казань. ул. Серова 125, офис 324
+              </p>
+            </address>
+            </div>
+            <div class="row">
+              <div class="phone_footer">
+              <p id="phone_footer">
+                Телефон:
+              </p>
+              <p id="number">
+                8 (999) 999-99-99
+              </p>
+            </div>
+            </div>
+            <div class="row social">
+            <div class="social_icon">
+            <a href=""><img src="img/vk.png" alt="Вконтакте"></a>
+          </div>
+          <div class="social_icon">
+            <a href=""><img src="img/insta.png" alt="Инстаграмм"></a>
+          </div>
+            <button id="get_answer" data-toggle="modal" href="#">Задать вопрос</button>
+            </div>
+          </div> <!--col-md-6-->
+        </div> <!--row-->
+        <div class="row">
+          <div class="col-md-4 details_row">
+            <h5>Рога и копыта</h5>
+            <p>
+              ОГРН 3142822563224
+              <br>  
+              ИНН 06231998854
+            </p>
+          </div>
+          <div class="col-md-4 policy">
+            <a data-toggle="modal" href="#">Политика конфидициальности</a>
+            <br>
+            <p>Казань, 2013-2016</p>
+          </div>
+          <div class="col-md-4 martyn">
+            <h4>Сайт разработан:</h4>
+            <a href="https://vk.com/id492143645">Martyn Puchkov</a>
+          </div>
+        </div>
+      </div> <!--container-->
+    </footer>
+
+
+    <!-- Вызов замерщика -->
+        <div class="modal fade" id="get_measurer_modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+          <div class="modal-dialog modal-sm">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                
+              </div>
+              <div class="modal-body text-center">
+               <div class="row">
+                 <div class="header_modal">
+                   <h4>Для вызова замерщика <br> оставьте свои данные</h4>
+                 </div>
+               </div>
+               <div class="row">
+                 <form action="#">
+                   <div class="col-xs-12">
+                     <input name="name" type="text" required placeholder="Имя..." class="form-control form_input">
+                   </div>
+                   <div class="col-xs-12">
+                     <input name="phone" type="text" required placeholder="Телефон..." class="form-control form_input">
+                   </div>
+                   <div class="col-xs-12">
+                     <button type="submit">Заказать жалюзи</button>
+                   </div>
+                 </form>
+               </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+        <!-- Подробнее (горизонтальные жалюзи) -->
+        <div class="modal fade" id="more_horizontal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+          <div class="modal-dialog big_modal">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                
+              </div>
+              <div class="modal-body">
+               <div class="row">
+                 <div class="header_modal_info">
+                   <h4>Вертикальные жалюзи</h4>
+                 </div>
+                 <br>
+               </div>
+               <div class="row">
+                 <div class="col-sm-5">
+                   <div class="fotorama" data-width="100%">
+
+                     <img src="img/types/horizontal/1.jpg" alt="">
+                     <img src="img/types/horizontal/2.jpg" alt="">
+                     <img src="img/types/horizontal/3.jpg" alt="">
+                     <img src="img/types/horizontal/4.jpg" alt="">
+                   </div>
+                 </div>
+                 <div class="cols-sm-7">
+                   <p>Являются популярным видом жалюзи из-за своей универсальности и простоты конструкции. <br> <br> В отличии от штор, позволяют плавно регулировать поток света в помещении.<br><br> Одновременно с унивальностью дизайна, вертикальные жалюзи - это дешевая альтернатива традиционным шторам. </p>
+                 </div>
+               </div>
+               <div class="row">
+                 <form action="#">
+                   <div class="col-xs-4">
+                     <input name="name" type="text" required placeholder="Имя..." class="form-control form_input">
+                   </div>
+                   <div class="col-xs-4">
+                     <input name="phone" type="text" required placeholder="Телефон..." class="form-control form_input">
+                   </div>
+                   <div class="col-xs-4">
+                     <button type="submit">Заказать жалюзи</button>
+                   </div>
+                 </form>
+               </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+              <!-- Подробнее (вертикальные жалюзи) -->
+        <div class="modal fade" id="more_vertical" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+          <div class="modal-dialog big_modal">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                
+              </div>
+              <div class="modal-body">
+               <div class="row">
+                 <div class="header_modal_info">
+                   <h4>Горизонтальные жалюзи</h4>
+                 </div>
+                 <br>
+               </div>
+               <div class="row">
+                 <div class="col-sm-5">
+                   <div class="fotorama" data-width="100%">
+
+                     <img src="img/types/horizontal/1.jpg" alt="">
+                     <img src="img/types/horizontal/2.jpg" alt="">
+                     <img src="img/types/horizontal/3.jpg" alt="">
+                     <img src="img/types/horizontal/4.jpg" alt="">
+                   </div>
+                 </div>
+                 <div class="cols-sm-7">
+                   <p>Являются популярным видом жалюзи из-за своей универсальности и простоты конструкции. <br> <br> В отличии от штор, позволяют плавно регулировать поток света в помещении.<br><br> Одновременно с унивальностью дизайна, вертикальные жалюзи - это дешевая альтернатива традиционным шторам. </p>
+                 </div>
+               </div>
+               <div class="row">
+                 <form action="#">
+                   <div class="col-xs-4">
+                     <input name="name" type="text" required placeholder="Имя..." class="form-control form_input">
+                   </div>
+                   <div class="col-xs-4">
+                     <input name="phone" type="text" required placeholder="Телефон..." class="form-control form_input">
+                   </div>
+                   <div class="col-xs-4">
+                     <button type="submit">Заказать жалюзи</button>
+                   </div>
+                 </form>
+               </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Подробнее (вертикальные жалюзи) -->
+        <div class="modal fade" id="more_roll" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                
+              </div>
+              <div class="modal-body">
+               <div class="row">
+                 <div class="header_modal_info">
+                   <h4>Рулонные жалюзи</h4>
+                 </div>
+                 <br>
+               </div>
+               <div class="row">
+                 <div class="col-sm-5">
+                   <div class="fotorama" data-width="100%">
+
+                     <img src="img/types/horizontal/1.jpg" alt="">
+                     <img src="img/types/horizontal/2.jpg" alt="">
+                     <img src="img/types/horizontal/3.jpg" alt="">
+                     <img src="img/types/horizontal/4.jpg" alt="">
+                   </div>
+                 </div>
+                 <div class="cols-sm-7">
+                   <p>Являются популярным видом жалюзи из-за своей универсальности и простоты конструкции. <br> <br> В отличии от штор, позволяют плавно регулировать поток света в помещении.<br><br> Одновременно с унивальностью дизайна, вертикальные жалюзи - это дешевая альтернатива традиционным шторам. </p>
+                 </div>
+               </div>
+               <div class="row">
+                 <form action="#">
+                   <div class="col-xs-4">
+                     <input name="name" type="text" required placeholder="Имя..." class="form-control form_input">
+                   </div>
+                   <div class="col-xs-4">
+                     <input name="phone" type="text" required placeholder="Телефон..." class="form-control form_input">
+                   </div>
+                   <div class="col-xs-4">
+                     <button type="submit">Вызвать замерщика</button>
+                   </div>
+                 </form>
+               </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+             <!-- Подробнее  рулонные шторы) -->
+        <div class="modal fade" id="more_pleated" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+          <div class="modal-dialog big_modal">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                
+              </div>
+              <div class="modal-body">
+               <div class="row">
+                 <div class="header_modal_info">
+                   <h4>Жалюзи плиссе</h4>
+                 </div>
+                 <br>
+               </div>
+               <div class="row">
+                 <div class="col-sm-5">
+                   <div class="fotorama" data-width="100%">
+
+                     <img src="img/types/horizontal/1.jpg" alt="">
+                     <img src="img/types/horizontal/2.jpg" alt="">
+                     <img src="img/types/horizontal/3.jpg" alt="">
+                     <img src="img/types/horizontal/4.jpg" alt="">
+                   </div>
+                 </div>
+                 <div class="cols-sm-7">
+                   <p>Являются популярным видом жалюзи из-за своей универсальности и простоты конструкции. <br> <br> В отличии от штор, позволяют плавно регулировать поток света в помещении.<br><br> Одновременно с унивальностью дизайна, вертикальные жалюзи - это дешевая альтернатива традиционным шторам. </p>
+                 </div>
+               </div>
+               <div class="row">
+                 <form action="#">
+                   <div class="col-xs-4">
+                     <input name="name" type="text" required placeholder="Имя..." class="form-control form_input">
+                   </div>
+                   <div class="col-xs-4">
+                     <input name="phone" type="text" required placeholder="Телефон..." class="form-control form_input">
+                   </div>
+                   <div class="col-xs-4">
+                     <button type="submit">Вызвать замерщика</button>
+                   </div>
+                 </form>
+               </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+                 <!-- Подробнее  жалюзи плиссе) -->
+              <div class="modal fade" id="get_horizontal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+          <div class="modal-dialog modal-sm">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                
+              </div>
+              <div class="modal-body text-center">
+               <div class="row">
+                 <div class="header_modal">
+                   <h4>Для заказа жалюзи <br> оставьте свои данные</h4>
+                 </div>
+               </div>
+               <div class="row">
+                 <form action="#">
+                   <div class="col-xs-12">
+                     <input name="name" type="text" required placeholder="Имя..." class="form-control form_input">
+                   </div>
+                   <div class="col-xs-12">
+                     <input name="phone" type="text" required placeholder="Телефон..." class="form-control form_input">
+                   </div>
+                   <div class="col-xs-12">
+                     <button type="submit">Заказать жалюзи</button>
+                   </div>
+                 </form>
+               </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.nicescroll.min.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script>
+      new WOW().init();
+    </script>
+    <script>
+      $(document).ready(
+          function() {
+              $("html").niceScroll({cursorcolor:"#000"});
+          }
+      );
+    </script>
+    <link  href="http://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.css" rel="stylesheet"> <!-- 3 KB -->
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.js"></script> <!-- 16 KB -->
+  </body>
+</html>
